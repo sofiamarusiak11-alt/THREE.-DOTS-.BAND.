@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SOC.MEDIA</title>
+        <link rel="stylesheet" href="STYLE.CSS">
+        <style>
+            html,body{height:100%;margin:0;padding:0}
+            body{
+                /* use a relative path to the image in the workspace */
+                background-image: url('page22.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                min-height:100vh;
+            }
+            .overlay{height:100%;display:flex;align-items:flex-start;justify-content:center;padding-top:32px;background:rgba(0,0,0,0.35)}
+            .overlay h1{color:var(--text,#fff);font-size:clamp(24px,4vw,48px);margin:0}
+            /* instagram link fixed at left center */
+            .instagram-link{
+                position:fixed;
+                left:16px;
+                top:50%;
+                transform:translateY(-50%);
+                background:rgba(0,0,0,0.6);
+                color:var(--text,#fff);
+                padding:14px 18px;
+                border-radius:6px;
+                text-decoration:none;
+                font-weight:700;
+                font-size:18px;
+                z-index:40;
+            }
+            .tiktok-link{
+                position:fixed;
+                left:50%;
+                top:50%;
+                transform:translate(-50%,-50%);
+                background:rgba(0,0,0,0.7);
+                color:var(--text,#fff);
+                padding:16px 22px;
+                border-radius:8px;
+                text-decoration:none;
+                font-weight:800;
+                font-size:20px;
+                z-index:45;
+            }
+            .telegram-link{
+                position:fixed;
+                right:16px;
+                top:50%;
+                transform:translateY(-50%);
+                background:rgba(0,0,0,0.6);
+                color:var(--text,#fff);
+                padding:14px 18px;
+                border-radius:6px;
+                text-decoration:none;
+                font-weight:700;
+                font-size:18px;
+                z-index:40;
+            }
+        </style>
+    </head>
+    <body>
+
+<a href="https://www.instagram.com/three_dots_official_?igsh=MWdwZHU0NGVwZWh4bg==" class="instagram-link" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+<a href="https://www.tiktok.com/@three_dots_official" class="tiktok-link" target="_blank" rel="noopener noreferrer">TIKTOK</a>
+<a href="https://t.me/threedots22" class="telegram-link" target="_blank" rel="noopener noreferrer">TELEGRAM</a>
+
+        <div class="overlay">
+            <h1>SOC.MEDIA</h1>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    /* theme variables (default: dark) */
+    background-color: rgb(0, 0, 0);
+    --bg: rgb(0, 0, 0);
+    --text: rgb(255, 255, 255);
+    --accent: rgb(217, 242, 248);
+    --header-bg: rgb(255, 255, 255);
+    --btn-text: #fff;
+
+    /* main background uses variable --bg (ensure it's applied) */
+    background-color: var(--bg);
+    color: var(--text);
+}
+    .container {
+        margin-top: 50px;
+        margin-left: 165px;
+        margin-right: 155px;
+         color: var(--text);
+    }
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-logo{
+        color: var(--text);
+        font-size:28px;
+        font-weight: 800;
+    }
+
+    .header-link > a{
+        color: var(--text);
+        text-decoration: none;
+        margin-right: 45px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .cheked, .checked {
+        padding: 6px;
+        border-bottom: 1px solid var(--accent);
+    }
+    .header-btn{
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: var(--header-bg);
+        color: var(--btn-text);
+        border: 2px solid var(--accent);
+        border-radius: 25px;
+    }
+
+/* nav-pills color variables and rules */
+:root{
+    --nav-bg: transparent;
+    --nav-link: var(--text);
+    --nav-link-active-bg: var(--accent);
+    --nav-link-active-color: var(--text);
+}
+
+.nav.nav-pills{
+    background-color: var(--nav-bg);
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.nav-pills .nav-link{
+    color: var(--nav-link);
+}
+
+.nav-pills .nav-link.active{
+    background-color: var(--nav-link-active-bg) !important;
+    color: var(--nav-link-active-color) !important;
+}
+
+/* light theme variant */
+.theme-light{
+    background-color: #fff;
+    --bg: #f6f7fb;
+    --text: #000;
+    --accent: #470f38;
+    --header-bg: #e9eefc;
+    --btn-text: #222;
+    --nav-bg: transparent;
+    --nav-link: #ffffff;
+    --nav-link-active-bg: #410c4a;
+    --nav-link-active-color: #fff;
+}
+
+    /* hero center styles for index page */
+    .hero-center{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:60vh;
+        background: transparent;
+    }
+    .hero-title{
+        font-size: clamp(24px, 4vw, 48px);
+        color: var(--text);
+        text-align:center;
+        margin:0;
+    }
+.photo.html{
+    background-color: black;
+}
+
+
+
